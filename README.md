@@ -1,1 +1,1 @@
-# personal-projecy
+# personal-project
