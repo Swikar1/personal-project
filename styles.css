@@ -516,11 +516,13 @@ footer{
 .button-span {
   color: #aaa;
 }
-.form-text{
+.form-text,
+.form-text-two {
     margin-top: 1.5rem;
 }
 
-.form-text h2 {
+.form-text h2,
+.form-text-two h2 {
     text-align: center;
     font-size: clamp(1.2rem, 2.2vw, 1.6rem);
     color: #43637E;
@@ -539,7 +541,8 @@ footer{
     background: #c28181;
     position: relative;
 }
-.form-text hr {
+.form-text hr,
+.form-text-two hr {
     border: 0;
     height: 2px;
     width: clamp(5rem, 25vw, 8rem);
@@ -548,7 +551,9 @@ footer{
     position: relative;
 }
 .form-text hr::before,
-.form-text hr::after {
+.form-text hr::after,
+.form-text-two hr::before,
+.form-text-two hr::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -557,10 +562,12 @@ footer{
     background: #c28181;
     transform: translateY(-50%);
 }
-.questions hr::before {
+.form-text hr::before,
+.form-text-two hr::before {
     left: -0.9rem;
 }
-.questions hr::after {
+.form-text hr::after,
+.form-text-two hr::after {
     right: -0.9rem;
 }
 .form-one{
@@ -643,5 +650,54 @@ input:focus, select:focus {
     padding: 5px;
     width:fit-content;
     margin-left: 43%;
-    border-radius: 2px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.txt-area{
+    border-radius: 5px;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid #000000;
+}
+
+.txt-area:focus {
+    outline: none;
+    border: 1px solid #000000;
+
+}
+
+.submit-button:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0px 5px black;
+}
+.submit-content{
+    background-color: #fff;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+.submit-content button{
+    margin-top:1rem;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+        box-shadow: 0px 5px black;
+}
+.submit-content-btn a{
+    color: #000;
+    text-decoration: none;
+}
+.submit-content-btn:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color: #000;
+    box-shadow: 0px 5px grey;
+}
+.submit-content-btn:hover a{
+    color: white;
 }

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 </head>
 <body>
      <div class="navbar">
@@ -45,6 +46,7 @@
         <hr>
     </div>
     <div class="form-one">
+        <form>
         <div class="form-one-txt-one">
             <div class="input-group">
                 <label for="name">Name</label>
@@ -77,6 +79,15 @@
                     <option value="grade7">Grade 7</option>
                 </select>
             </div>
+            <div class="input-group">
+                <label for="travel">Travel Facilities</label>
+                <select id="travel" name="travel" required>
+                    <option value="">Select an option</option>
+                    <option value="pickup">Pickup Required</option>
+                    <option value="dropoff">Dropoff Required</option>
+                    <option value="none">No Travel Facility Needed</option>
+                </select>
+            </div>
         </div>
         <div class="form-one-txt-three">
             <div class="input-group">
@@ -96,10 +107,87 @@
                 <input type="text" id="address" name="address" required placeholder="Enter address">
             </div>
             <div class="input-group">
-                <button type="submit" class="submit-button">Submit</button>
+              <br><label for="additional">Enter additional Information:</label>
+              <textarea class="txt-area" rows="4" placeholder="Enter additional information(Optional)"></textarea>
             </div>
+            <div class="input-group">
+                <button class="submit-button">Submit</button>
+            </div>
+        </form>
         </div>
     </div>
+<div class="form-text-two">
+     <h2>Enrollment Form<span class="button-span"> ─ Grade 8 to 9</span></h2>
+        <hr>
+</div>
+<div class="form-two">
+    <div class="form-one">
+        <form>
+            <div class="form-one-txt-one">
+                <div class="input-group">
+                    <label for="name-2">Name</label>
+                    <input type="text" id="name-2" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                    <label for="surname-2">Surname</label>
+                    <input type="text" id="surname-2" name="surname" required placeholder="Enter your surname">
+                </div>
+            </div>
+            <div class="form-one-txt-two">
+                <div class="input-group">
+                    <label for="dob-2">Date of Birth</label>
+                    <input type="date" id="dob-2" name="dob" required>
+                </div>
+                <div class="input-group">
+                    <label for="grade-2">Grade Applying For</label>
+                    <select id="grade-2" name="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="grade8">Grade 8</option>
+                        <option value="grade9">Grade 9</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="travel-2">Travel Facilities</label>
+                    <select id="travel-2" name="travel" required>
+                        <option value="">Select an option</option>
+                        <option value="pickup">Pickup Required</option>
+                        <option value="dropoff">Dropoff Required</option>
+                        <option value="none">No Travel Facility Needed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-one-txt-three">
+                <div class="input-group">
+                    <br><label for="parent-name-2">Parent/Guardian Name</label>
+                    <input type="text" id="parent-name-2" name="parent-name" required placeholder="Enter parent/guardian name">
+                </div>
+                <div class="input-group">
+                    <br><label for="contact-2"><i class="ri-phone-fill"></i> Contact Number</label>
+                    <input type="tel" id="contact-2" name="contact" required placeholder="Enter contact number" minlength="10" maxlength="10">
+                </div>
+                <div class="input-group">
+                    <br><label for="email-2"><i class="ri-mail-fill"></i> Email Address</label>
+                    <input type="email" id="email-2" name="email" required placeholder="Enter email address">
+                </div>
+                <div class="input-group">
+                    <br><label for="address-2"><i class="ri-map-pin-fill"></i> Address</label>
+                    <input type="text" id="address-2" name="address" required placeholder="Enter address">
+                </div>
+                <div class="input-group">
+                  <br><label for="additional-2">Enter additional Information:</label>
+                  <textarea class="txt-area" id="additional-2" rows="4" placeholder="Enter additional information(Optional)"></textarea>
+                </div>
+                <div class="input-group">
+                    <br><label for="result-upload">Upload previous year result photo:</label>
+                    <input type="file" id="result-upload" name="result-upload" accept="image/*,.pdf">
+                </div>
+                <div class="input-group">
+                    <button class="submit-button">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
     <footer>
         <p class="footer-p">Details</p>
