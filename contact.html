@@ -6,6 +6,7 @@
     <title>Contact Us | Mount View School</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -13,23 +14,31 @@
             <img src="Mount View logo.png" height="24px" width="24px" alt="Mount View Logo">
             <p>Mount View School</p>
         </div>
-
-        <div class="hamburger-menu">
-            <button class="hamburger-button" aria-label="Open menu">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F8F4FE"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
-            </button>
-        </div>
-
         <div class="navbar-links">
             <button class="home"><a href="index.html">Home</a></button>
             <button><a href="about.html">About Us</a></button>
             <button><a href="admissions.html">Admissions</a></button>
             <button><a href="contact.html">Contact</a></button>
         </div>
-
         <div class="social-links">
             <a href="https://www.facebook.com/mountviewebschool"><i class="ri-facebook-fill"></i></a>
             <a href="https://www.instagram.com/mountviewebschool/?hl=en"><i class="ri-instagram-line"></i></a>
+        </div>
+        <div class="hamburger-menu">
+            <button class="hamburger-button" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+            </button>
+        </div>
+        <div class="hamburger-menu-open">
+            <button class="close-menu" aria-label="Close menu">✕</button>
+            <button class="home"><a href="index.html">Home</a></button>
+            <button><a href="about.html">About Us</a></button>
+            <button><a href="admissions.html">Admissions</a></button>
+            <button><a href="contact.html">Contact</a></button>
+            <div class="overlay-social-links">
+                <a href="https://www.facebook.com/mountviewebschool" target="_blank" rel="noreferrer"><i class="ri-facebook-fill"></i></a>
+                <a href="https://www.instagram.com/mountviewebschool/?hl=en" target="_blank" rel="noreferrer"><i class="ri-instagram-line"></i></a>
+            </div>
         </div>
     </div>
 
