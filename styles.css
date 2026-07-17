@@ -17,6 +17,14 @@
     "Segoe UI Symbol",
     "Noto Color Emoji";
 }
+.principal-image {
+  display: block;
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -249,6 +257,7 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 1em;
+  margin-left: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -368,7 +377,7 @@ body {
   margin-top: 1rem;
   margin-right: 1rem;
   background-color: #fff;
-  padding-top: 1em;
+  padding: 1em;
 }
 .achievements-text h3 {
   margin-left: 1em;
@@ -381,6 +390,9 @@ body {
 }
 .navbar button:hover {
   background-color: #dad7d7;
+}
+.questions-img{
+  padding: 1em;
 }
 .ach-one-h {
   padding: 10px;
@@ -580,7 +592,8 @@ footer {
 .form-text h2,
 .form-text-two h2,
 .about-main h2,
-.people-to-contact h2 {
+.people-to-contact h2,
+.about-principal h2 {
   text-align: center;
   font-size: clamp(1.2rem, 2.2vw, 1.6rem);
   color: #43637e;
@@ -595,7 +608,8 @@ footer {
 .form-text hr,
 .form-text-two hr,
 .about-main hr,
-.people-to-contact hr {
+.people-to-contact hr,
+.about-principal hr {
   border: 0;
   height: 2px;
   width: clamp(5rem, 25vw, 8rem);
@@ -611,7 +625,9 @@ footer {
 .about-main hr::before,
 .about-main hr::after,
 .people-to-contact hr::before,
-.people-to-contact hr::after {
+.people-to-contact hr::after,
+.about-principal hr::before,
+.about-principal hr::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -718,6 +734,8 @@ select:focus {
   margin-left: 43%;
   border-radius: 5px;
   margin-top: 1rem;
+  position: relative;
+  margin-left:46%;
   cursor: pointer;
   border: 1px solid black;
 }
@@ -1133,4 +1151,25 @@ select:focus {
 }
 .navbar-links button:hover {
   background-color: #fff;
+}
+
+.about-principal-txt:hover{
+  transform: scale(1.01);
+  transition: 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.089);
+}
+.principal-img{
+  width: 100%;
+  height: 150px;
+}
+.user-icon{
+    font-size: 40px;
+  color: #df00d3;
+  padding: 8px;
+  background-color: #fa01fa;
+  font-weight: 200;
+  display: inline-block;
+  line-height: 1;
+  border-radius: 50%;
+  -webkit-text-stroke: 1px #a500a5;
 }
