@@ -1173,3 +1173,7 @@ select:focus {
   border-radius: 50%;
   -webkit-text-stroke: 1px #a500a5;
 }
+.submit-button a{
+  text-decoration: none;
+  color: #000;
+}
