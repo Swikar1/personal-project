@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
+<style>
+    .navbar a:hover{
+    text-decoration: underline;
+}
+    .contact-btn a:hover{
+        transform: scale(1.0);
+        text-decoration: none;
+    }
+</style>
 <body>
     <div class="navbar">
         <div class="logo">
@@ -15,10 +24,10 @@
             <p>Mount View School</p>
         </div>
         <div class="navbar-links">
-            <button class="home"><a href="index.html">Home</a></button>
+            <button><a href="index.html">Home</a></button>
             <button><a href="about.html">About Us</a></button>
             <button><a href="admissions.html">Admissions</a></button>
-            <button><a href="contact.html">Contact</a></button>
+            <button style="border-bottom: 1px solid black;" class="contact-btn"><a href="contact.html">Contact</a></button>
         </div>
         <div class="social-links">
             <a href="https://www.facebook.com/mountviewebschool"><i class="ri-facebook-fill"></i></a>
